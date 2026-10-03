@@ -5,26 +5,30 @@ This repository contains Java exercises focused on constructors, inheritance, an
 
 This repository contains Java exercises focused on constructors, inheritance, and static members in object-oriented programming.
 
-## Concepts Covered
-- Constructors
-- Inheritance
-- Static variables and methods
-- Classes and objects
-- Method overriding
-- Object-Oriented Programming (OOP)
-- Code organization and reuse
+[Back to portfolio](https://github.com/lourdhadweh4-del) · [Coursework index](https://github.com/lourdhadweh4-del/lourdhadweh4-del/blob/main/COURSEWORK.md)
 
-## Tools Used
-- Java
-- IntelliJ IDEA
+## Repository guide
 
-## Purpose
-To practice key object-oriented programming concepts including constructors, inheritance relationships, and static members in Java.
+These are learning exercises. Each source folder is compiled separately because some exercises reuse class names.
 
-Constructors are used to initialize objects when they are created. 
+| Source folder | Java files | Programs with a `main` method |
+| --- | ---: | --- |
+| [src](src) | 25 | [Animal1_Main](src/Animal1_Main.java), [Animal_Main](src/Animal_Main.java), [Book](src/Book.java), [Dog](src/Dog.java), [Employee_Main](src/Employee_Main.java), [Point](src/Point.java), [Shape_Main](src/Shape_Main.java), [Static_main](src/Static_main.java), [Student](src/Student.java), [Vehicle_Main](src/Vehicle_Main.java), [static_main2](src/static_main2.java), [static_main3](src/static_main3.java) |
 
-Inheritance allows one class to reuse properties and methods from another class, improving code organization and reducing repetition. 
+## Compile and run
 
-Static variables and methods belong to the class rather than individual objects, allowing shared behavior across instances. 
+Install a JDK with `javac` and `java` available. The source folders below were compiled successfully with **JDK 24.0.2**. Run commands from the repository root.
 
-This project helped strengthen understanding of class relationships and how reusable code can be designed using OOP principles.
+### src
+
+```bash
+mkdir -p build/src
+javac -d build/src src/*.java
+java -cp build/src Animal1_Main
+```
+
+Choose another entry point from the table to run a different exercise. Some programs prompt for console input; others demonstrate object construction without printing output.
+
+## Scope
+
+These repositories document programming practice and coursework. Successful compilation is a basic check; it does not mean every exercise has complete input validation or production-level behavior.
